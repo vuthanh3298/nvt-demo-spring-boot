@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Welcome</title>
+<link th:href="@{/resources/bootstrap/css/bootstrap.min.css}"
+	rel="stylesheet" />
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" />
+<link rel="stylesheet" type="text/css" th:href="@{/css/login.css}"/>
+</head>
+<body onload="getListUser()">
+	<h1 style="margin-left: 10px">List User</h1>
+	
+	<div id="list-user"></div>
+
+	<script th:src="@{/resources/jquery/jquery.min.js}"></script>
+	<script th:src="@{/resources/bootstrap/js/bootstrap.js}"></script>
+	<script th:src="@{https://unpkg.com/axios/dist/axios.min.js}"></script>
+	<script th:src="@{/js/custom.js}"></script>
+</body>
+</html>
